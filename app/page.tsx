@@ -1,7 +1,15 @@
-export default function Home() {
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Testimonials from "../components/Testimonials";
+import Cta from "../components/Cta";
+
+export default function LandingPage(): JSX.Element {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Suppp</h1>
-    </div>
+    <main>
+      <Hero />
+      <Features />
+      <Testimonials />
+      <Cta />
+    </main>
   );
 }
